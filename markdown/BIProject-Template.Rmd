@@ -17,9 +17,9 @@ editor_options:
 
 |                                              |     |
 |----------------------------------------------|-----|
-| **Student ID Number**                        | ... |
-| **Student Name**                             | ... |
-| **BBIT 4.2 Group**                           | ... |
+| **Student ID Number**                        | 136709 |
+| **Student Name**                             | Jane Mugo|
+| **BBIT 4.2 Group**                           | C |
 | **BI Project Group Name/ID (if applicable)** | ... |
 
 # Setup Chunk
@@ -38,20 +38,25 @@ knitr::opts_chunk$set(
 
 # Understanding the Dataset (Exploratory Data Analysis (EDA))
 
-## Loading the Dataset
+## Loading the Dataset : 
+library(readr)
+skill <- read_csv(
+  "data/skill2vec_50k.csv"
+)
 
 ### Source:
 
-The dataset that was used can be downloaded here: *\<provide a link\>*
+The dataset that was used can be downloaded here: *\<https://github.com/duyet/skill2vec-dataset>*
 
 ### Reference:
-
+## Duyet. (2019). Skill2Vec Dataset. GitHub.
 *\<Cite the dataset here using APA\>\
 Refer to the APA 7th edition manual for rules on how to cite datasets: <https://apastyle.apa.org/style-grammar-guidelines/references/examples/data-set-references>*
 
-```{r Dataset Loader}
 library(readr)
-
+skill <- read_csv(
+  "data/skill2vec_50k.csv"
+)
 # Provide the executable R code inside the various code chunks as guided by the lab work.
 ```
 

@@ -357,6 +357,10 @@ churn_dateset <- read_csv(
 ## Part A ----
 # Specify the code you have used to load your own dataset for the BI Project
 # here:
+library(readr)
+skill <- read_csv(
+  "data/skill2vec_50k.csv"
+)
 
 ## Part B ----
 # Upload *the link* to your "Lab1-LoadingDatasets.R" hosted on Github (do not
